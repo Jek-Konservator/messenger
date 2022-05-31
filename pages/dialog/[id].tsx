@@ -3,6 +3,8 @@ import axios from "axios";
 
 import {FC} from "react";
 
+// TODO в indexnom file диалог не выбрал
+
 const DialogSelected:FC<{dialog: any, messages: any}> = ({dialog, messages}) => {
   return <Dialog dialog={dialog} messages={messages} />;
 };

@@ -5,6 +5,9 @@
   flex-direction: column-reverse;
   align-items: flex-start;
   overflow: auto;
+  /*TODO: убрать если не понравится*/
+  padding-right:50px;
+  box-sizing: border-box;
 }
 
 .MessagesMessage {

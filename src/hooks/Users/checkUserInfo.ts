@@ -3,7 +3,7 @@ import User from "../../store/user";
 import axios from "axios";
 import { useRouter } from "next/router";
 
-
+// useCheckUserInfo TODO в названии тоже самое и папку с маленькой буквы
 export const useCheckUserInfo = () => {
   const router = useRouter();
   return async () => {

@@ -8,6 +8,7 @@ import { Textarea } from "../../../UIKit/inputs/Textarea/Textarea";
 import { SendAMessageButton } from "../../../UIKit/buttons/SendAMessageButton/SendAMessageButton";
 import { useSocket } from "../../../hooks/sockets/useSocket";
 
+// TODO тип не указан
 const initialFormValues = {
   newMessage: "",
 };
@@ -19,10 +20,12 @@ export const Dialog: FC<{ dialog: any; messages: any }> = ({
   const [dialogMessages, setDialogMessages] = useState(messages);
 
 
-  const socket = useSocket();
+  const socket = useSocket(); // TODO больше на утилку похоже нежели хук
+
 
   const newMessage = async (values: any) => {
     try {
+      // TODO на сокеты перенести
       const { data } = await axios.post(
         `/api/messages/newMessage?&dialogId=${dialog._id}&ownerId=${User.userInfo.id}`,
         {

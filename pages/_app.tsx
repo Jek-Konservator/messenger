@@ -1,6 +1,6 @@
 import React, { FC, useEffect, useMemo } from "react";
 import "../src/GlobalStyle.css";
-// @ts-ignore
+// @ts-ignore TODO
 import styles from "./App.module.css";
 import { Header } from "../src/components/Header/Header";
 import { Dialogs } from "../src/components/Dialogs/Dialogs";
@@ -10,6 +10,7 @@ import { observer } from "mobx-react-lite";
 import axios from "axios";
 import { useCheckUserInfo } from "../src/hooks/Users/checkUserInfo";
 import { useRouter } from "next/router";
+import "./scroll.css";
 
 axios.defaults.baseURL = "http://localhost:3000/";
 

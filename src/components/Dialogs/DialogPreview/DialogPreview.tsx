@@ -12,6 +12,7 @@ export const DialogPreview = ({ user, dialog }: any) => {
 
   const openDialog = async () => {
     try {
+      // openDialog и createDialog должны быть разными
       const { data } = await axios.get(
         `/api/dialogs/openDialog?idUserOne=${userInfo._id}&idUserTwo=${User.userInfo.id}`
       );
@@ -33,7 +34,7 @@ export const DialogPreview = ({ user, dialog }: any) => {
           : dialog.idUserOne
       ).then((data) => setUserInfo(data));
   }, []);
-
+  // TODO: router.query id === dialog id => styled krasiviy
   return (
     <div
       onClick={() => {
@@ -42,7 +43,6 @@ export const DialogPreview = ({ user, dialog }: any) => {
       className={styles.DialogPreview}
     >
       {userInfo.login}
-
     </div>
   );
 };
