@@ -43,6 +43,7 @@ export const Registration = () => {
         }}
       >
         <Field name="login">
+            {/*TODO: тут и в логине добавить name + type чтобы можно было автозаполнение делать*/}
           <Input placeholder="Логин" />
         </Field>
         <Field name="password">

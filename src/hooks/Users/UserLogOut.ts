@@ -4,6 +4,7 @@ import User from "../../store/user";
 import { useRouter } from "next/router";
 
 
+// useUserLogOut TODO в названии тоже самое и папку с маленькой буквы
 
 export const useUserLogOut = () => {
   const router = useRouter();

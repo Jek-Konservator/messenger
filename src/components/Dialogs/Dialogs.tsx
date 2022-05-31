@@ -1,16 +1,12 @@
-import React, {
-
-  useEffect,
-  useMemo,
-  useState,
-  useTransition,
-} from "react";
+import React, { useEffect, useMemo, useState, useTransition } from "react";
 import styles from "./Dialogs.module.css";
 import { Input } from "../../UIKit/inputs/Input/Input";
 import axios from "axios";
 import { DialogPreview } from "./DialogPreview/DialogPreview";
 import User from "../../store/user";
 
+//  TODO Dialogs=> SideDialogs
+//  !! не нужно если это не конкретное приведение к чему то  на крайних случай  есть оператор hui?.чтото
 
 export const Dialogs = () => {
   const [value, setValue] = useState("");
@@ -53,13 +49,16 @@ export const Dialogs = () => {
       console.log(err);
     }
   };
+  // TODO фильтрация на сервере)
 
   const filteredValues = useMemo(async () => {
+    console.log(123);
     !!value &&
       getUsers().then((data) => {
         setUsers(
           data.filter(
-            ( // @ts-ignore
+            (
+              // @ts-ignore
               user
             ) =>
               user.login.toLowerCase().includes(filteredValue) ||
@@ -88,6 +87,7 @@ export const Dialogs = () => {
           <>
             <span className={styles.DialogsDialogPreviewText}>
               Ваши диалоги
+              {/* TODO: если поле не пустое*/}
             </span>
             {userDialogs.map((dialog) => (
               // @ts-ignore

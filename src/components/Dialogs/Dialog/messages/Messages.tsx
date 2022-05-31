@@ -8,6 +8,7 @@ export const Messages: FC<{ messages: any }> = ({ messages }) => {
     <div className={styles.Messages}>
       {messages.map((message: any) => (
         <div
+          key={message._id}
           className={`
           ${styles.MessagesMessage} ${
             message.ownerId === User.userInfo.id && styles.MessagesMessageUser
