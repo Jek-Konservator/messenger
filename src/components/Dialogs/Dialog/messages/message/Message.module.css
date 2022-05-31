@@ -1,0 +1,15 @@
+.Message {
+  min-width: 52px;
+  max-width: 420px;
+  min-height: 22px;
+  margin: 5px 0 5px 0;
+  padding: 6px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #8774e1;
+  color: white;
+  word-wrap: break-word;
+  font-size: 16px;
+  white-space: pre;
+}
+

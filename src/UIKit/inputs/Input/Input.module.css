@@ -1,0 +1,23 @@
+.Input {
+  width: 350px;
+  height: 50px;
+  margin: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+  background-color: #ffffff00;
+  border: 2px solid grey;
+  border-radius: 10px;
+  color: #fff;
+}
+.Input:focus-visible {
+  outline: none;
+}
+.Input:hover {
+  border: 2px solid #8774e1;
+}
+.Textarea:focus {
+  border: 2px solid #8774e1;
+}
+.Input::placeholder {
+  color: #fff;
+}

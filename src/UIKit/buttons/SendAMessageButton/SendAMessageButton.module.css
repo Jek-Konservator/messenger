@@ -1,0 +1,7 @@
+.SendAMessageButton {
+  width: fit-content;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffffff00;
+}

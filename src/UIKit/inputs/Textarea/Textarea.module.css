@@ -1,0 +1,28 @@
+.Textarea {
+  width: 350px;
+  min-height: 50px;
+  max-height: 500px;
+  margin: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #ffffff00;
+  border: 2px solid grey;
+  border-radius: 10px;
+  color: #fff;
+  resize: none;
+}
+.Textarea::-webkit-scrollbar {
+  display: none;
+}
+.Textarea:focus-visible {
+  outline: none;
+}
+.Textarea:hover {
+  border: 2px solid #8774e1;
+}
+.Textarea:focus {
+  border: 2px solid #8774e1;
+}
+.Textarea::placeholder {
+  color: #fff;
+}

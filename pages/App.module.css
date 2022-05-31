@@ -1,0 +1,9 @@
+.MainContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.MainContainerDialog {
+  width: calc(100% - 460px);
+  height: calc(100vh - 70px);
+}

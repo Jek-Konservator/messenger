@@ -1,0 +1,15 @@
+.DialogPreview {
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  border-radius: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fff;
+}
+.DialogPreview:hover {
+  background-color: #484848;
+  cursor: pointer;
+}

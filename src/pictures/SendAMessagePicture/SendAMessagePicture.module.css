@@ -1,0 +1,14 @@
+.SendAMessagePicture{
+    cursor: pointer;
+    user-select: none;
+    border-radius: 50%;
+    background-color: #8774e1;
+    position: fixed;
+}
+
+.SendAMessagePicture:hover{
+    background-color: #6a52da;
+}
+.SendAMessagePicture:active{
+    background-color: #8774e1;
+}
